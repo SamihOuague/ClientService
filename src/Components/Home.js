@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Container, Button, Carousel } from "react-bootstrap";
+import { Container, Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 
 class Home extends Component {
@@ -10,37 +11,35 @@ class Home extends Component {
                     <Carousel.Item>
                         <div style={{backgroundImage: "url('bg2.png')", backgroundSize: "cover", height: "500px", width: "100%", display: "flex", alignItems: "center", justifyContent: "center"}}>
                             <div style={{color: "white", fontFamily: "Montserrat"}}>
-                                <h1>ZBEUB ZBEUB</h1>
-                                <p style={{fontSize: "18px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                <br/>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s !</p>
-                                <Button variant="outline-light" size="lg">PLUS DE ZBEUB</Button>
+                                <h1>CREATION DE SITE WEB</h1>
+                                <p style={{fontSize: "18px"}}>Site vitrine, portfolio, landing page, blog, e-commerce ... 
+                                <br/>Nous realisons tout type de projet en fonction de VOS besoins !</p>
+                                <Link className="btn btn-outline-light" to="/services">PLUS D'INFOS</Link>
                             </div>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div style={{backgroundImage: "url('bg1.png')", backgroundSize: "100%", height: "500px", width: "100%", display: "flex", alignItems: "center", justifyContent: "center"}}>
                             <div style={{color: "white", fontFamily: "Montserrat"}}>
-                                <h1>CREATEUR DE SITE</h1>
-                                <p style={{fontSize: "18px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                <br/>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s !</p>
-                                <Button variant="outline-light" size="lg">PLUS D'INFOS</Button>
+                                <h1>DEVELOPPEMENT D'APPLICATION MOBILE</h1>
+                                <p style={{fontSize: "18px"}}>Dans un monde ou les smartphones deviennent indispensables a chacun, 
+                                <br/>Posseder votre application mobile devient un atout majeur au developpement de votre entreprise !</p>
+                                <Link className="btn btn-outline-light" to="/services">PLUS D'INFOS</Link>
                             </div>
                         </div>
                     </Carousel.Item>
                 </Carousel>
                 <Container className="bg-light" style={{display: "flex", alignItems: "center", minHeight: "500px", flexWrap: "wrap", paddingBottom: "25px"}} fluid>
                     <div style={{fontFamily: "Montserrat", flex: "3", marginRight: "15px", marginBottom: "15px"}}>
-                        <h2 style={{padding: "15px 0px"}}>HOW DO YOU THINK YOU ARE ?</h2>
+                        <h2 style={{padding: "15px 0px"}}>QUI SOMMES NOUS ?</h2>
                         
-                        <p style={{fontSize: "18px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s !
-                        when an unknown printer took a galley of type and scrambled it to make.
-                        It has survived not only five centuries, but also the leap into electronic
-                        remaining essentially unchanged. It was popularised in the 1960s with the release.</p>
+                        <p style={{fontSize: "18px"}}>Nous sommes une agence specialiser dans l'integration et developpement d'application & site web,
+                        responsive, efficace, rapide et professionnel.
+                        </p>
                         <br/>
-                        <Button variant="outline-dark" size="lg">NO ZBOUB</Button>
+                        <Link className="btn btn-outline-dark" to="/about">VOIR PLUS</Link>
                     </div>
-                    <div style={{fontFamily: "Montserrat", flex: "2", minWidth: "300px"}}>
+                    <div className="border-muted shadow-lg" style={{fontFamily: "Montserrat", flex: "2", minWidth: "300px"}}>
                         <img src="computer.jpeg" alt="computer img" width="100%"/>
                     </div>
                 </Container>
@@ -62,19 +61,18 @@ class Home extends Component {
                     </div>
                 </div>
                 <Container className="bg-light" style={{display: "flex", alignItems: "center", minHeight: "500px", flexWrap: "wrap", paddingTop: "25px"}} fluid>
-                    <div style={{fontFamily: "Montserrat", flex: "2", minWidth: "300px"}}>
+                    <div className="border-muted shadow-lg" style={{fontFamily: "Montserrat", flex: "2", minWidth: "300px"}}>
                         <img src="image1.jpeg" alt="computer img" width="100%"/>
                     </div>
                     <div style={{fontFamily: "Montserrat", flex: "3", marginLeft: "15px", marginBottom: "15px"}}>
-                        <h2 style={{padding: "15px 0px"}}>WHAT DO YOU THINK ABOUT ZBOUB ?</h2>
+                        <h2 style={{padding: "15px 0px"}}>POURQUOI NOUS CHOISIR NOUS ?</h2>
                         
-                        <p style={{fontSize: "18px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s !
-                        when an unknown printer took a galley of type and scrambled it to make.
-                        It has survived not only five centuries, but also the leap into electronic
-                        remaining essentially unchanged. It was popularised in the 1960s with the release.</p>
+                        <p style={{fontSize: "18px"}}>Nous faisons le choix d'ecrire le code par nos soins pour vous assurer un service de qualite.
+                        En effet, malgres le coter pratique d'un CMS tel que WordPress ou Shopify, ces dernier sont lourd et gourmand en ressources,
+                        L'avantage des technologies tel que React JS/Native, Symfony ou NodeJS est que ce sont des outils tres efficaces et reactif
+                        qui assurent une navigation fluide et agreable.</p>
                         <br/>
-                        <Button variant="outline-dark" size="lg">NIK MOK</Button>
+                        <Link to="/services">VOIR PLUS</Link>
                     </div>
                 </Container>
             </div>
